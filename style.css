@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr 1fr;
+  grid-template-rows: 0.25fr 1fr;
+  background-color: #0b090a;
+}
+#header {
+  color: #d3d3d3;
+  grid-column: 2;
+  text-align: center;
+  font-family: "Marcellus SC", serif;
+}
+
+#calculator {
+  grid-column: 2;
+  border: 3px solid #d3d3d3;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  grid-row: 2;
+  background-color: #161a1d;
+}
+
+#display {
+  height: 30px;
+  padding: 0px 20px;
+  vertical-align: middle;
+  line-height: 30px;
+  background-color: #000000;
+  color: #d3d3d3;
+  font-family: "Hahmlet", serif;
+}
+
+#buttons {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-top: 3px solid #d3d3d3;
+  padding-top: 10px;
+}
+
+#operations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5px 15px 0px 15px;
+}
+
+.operation-btn {
+  border: 1px solid #d3d3d3;
+  background-color: #660708;
+  color: #dad2bc;
+  font-size: 20px;
+  height: 3rem;
+}
+
+.operation-btn:active {
+  color: #660708;
+  background-color: #dad2bc;
+  border: 1px solid #660708;
+}
+
+#equals {
+  grid-column: 1/3;
+  background-color: #1d3557;
+}
+
+#equals:active {
+  background-color: #dad2bc;
+  color: #1d3557;
+  border: 1px solid #1d3557;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  grid-gap: 5px;
+  margin: 10px 15px;
+}
+
+#zero {
+  grid-column: 1/4;
+  margin-bottom: 3px;
+}
+
+.numbers-btn {
+  border: transparent;
+  background-color: #d3d3d3;
+  color: #660708;
+  font-family: "Staatliches", cursive;
+  font-size: 25px;
+}
+
+.numbers-btn:active {
+  background-color: #660708;
+  color: #d3d3d3;
+}
+
+@media (max-width: 350px) {
+  #calculator {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 750px) {
+  #calculator {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 749px) and (min-width: 400px) {
+  #calculator {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+  #calculator {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 350px) {
+  #calculator {
+    width: 60vw;
+  }
+}
